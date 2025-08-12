@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, main, footer {
+            max-width: 800px;
+            margin: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #666;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Content & Form</h1>
+    <p>This page demonstrates HTML5 features such as lists, tables, media embedding, and form validation.</p>
+</header>
+
+<main>
+    <!-- Section: Lists -->
+    <section>
+        <h2>Top 3 Web Development Skills</h2>
+        <ol>
+            <li>HTML5 & Semantic Structure</li>
+            <li>CSS3 Styling & Layout</li>
+            <li>JavaScript Interactivity</li>
+        </ol>
+
+        <h3>Common HTML5 Elements</h3>
+        <ul>
+            <li>Forms</li>
+            <li>Tables</li>
+            <li>Media Embedding</li>
+        </ul>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+        <h2>Sample Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Usage</th>
+                    <th>Popularity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Structure of web pages</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Styling and layout</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Dynamic interactivity</td>
+                    <td>Very High</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+        <h2>Embedded Media</h2>
+        <img src="https://via.placeholder.com/600x200" alt="Placeholder Image" style="width:100%; height:auto;">
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="100%">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- Section: HTML5 Form -->
+    <section>
+        <h2>User Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required pattern="[A-Za-z0-9]{5,}">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required minlength="6" readonly value="Readonly Example">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Subscribe to newsletter
+                </label>
+                <label>
+                    <input type="radio" name="contact" value="email" required>
+                    Contact me by Email
+                </label>
+                <label>
+                    <input type="radio" name="contact" value="phone">
+                    Contact me by Phone
+                </label>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" placeholder="Write something about yourself..." rows="4"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML5 Practice Page. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
